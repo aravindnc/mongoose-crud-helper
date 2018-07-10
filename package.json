@@ -1,0 +1,27 @@
+{
+  "name": "mongoose-crud-helper",
+  "version": "0.0.2",
+  "description": "A CRUD helper for Mongoose.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aravindnc/mongoose-crud-helper.git"
+  },
+  "keywords": [
+    "mongoose",
+    "crud",
+    "helper"
+  ],
+  "author": "Aravind NC <aravind_n_c@yahoo.co.in> (http://imwebgangster.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aravindnc/mongoose-crud-helper/issues"
+  },
+  "homepage": "https://github.com/aravindnc/mongoose-crud-helper#readme"
+}
