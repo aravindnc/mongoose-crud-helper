@@ -66,7 +66,7 @@ Model.hardDelete(where).then(function(response){
   // Your code here
 });
 ```   
-### 5.hardDelete
+### 5.softDelete
 ```javascript
 const where = {"_id": ObjectId('57f79499cd3aa1000a5643b7')}; // Object
 
