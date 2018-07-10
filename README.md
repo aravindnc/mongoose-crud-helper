@@ -2,27 +2,39 @@
 
 A simple helper library for Mongoose projects.
 
-This project is still in development stage.
-
 ## Installation
 
   `npm install mongoose-crud-helper`
 
+## Configuration
+Sample usage scenarios are explained below. 
+
+#### Changes to Model.js
+You can directly code this to your model.
+```javascript
+// Require the plugin in the top.
+const MCHelper = require('mongoose-crud-helper');
+
+// Add below after schema definition as required.
+SchemaName.plugin(MCHelper.changeDocStatus);
+SchemaName.plugin(MCHelper.getAllDocs);
+SchemaName.plugin(MCHelper.getOneDoc);
+```
 ## Usage
-
-#1.changeDocStatus
-
+You can directly code this to your controller. 
+### 1.changeDocStatus
+```javascript
 const data = {
-  _id:<Your-Object-ID>,
-  status:<New-Status>
+  _id:<Your-Object-ID>, // ObjectId
+  status: '<New-Status>' // String (active, deleted, pending)
 }; // Object
-  
+
 Model.changeDocStatus(data).then(function(response){
   // Your code here
 });
-  
-2.getAllDocs
-
+```    
+### 2.getAllDocs
+```javascript
 const where = {"$in": {status: ['active','pending']}}; // Object
 const fieldsToDisplay = {postName: 1, description: 1, createdOn: 1 }; //Object
 const paging = {
@@ -36,26 +48,29 @@ const paging = {
 Model.getAllDocs(where, fieldsToDisplay, paging).then(function(response){
   // Your code here
 });
-
-3.getOneDoc
-
+```   
+### 3.getOneDoc
+```javascript
 const where = {"$in": {status: ['active','pending']}}; // Object
 const fieldsToDisplay = {postName: 1, description: 1, createdOn: 1 }; //Object
+
 Model.getOneDoc(where, fieldsToDisplay).then(function(response){
   // Your code here
 });
-
-4.hardDelete
-
+```   
+### 4.hardDelete
+```javascript
 const where = {"_id": ObjectId('57f79499cd3aa1000a5643b7')}; // Object
+
 Model.hardDelete(where).then(function(response){
   // Your code here
 });
-
-5.hardDelete
-
+```   
+### 5.hardDelete
+```javascript
 const where = {"_id": ObjectId('57f79499cd3aa1000a5643b7')}; // Object
+
 Model.softDelete(where).then(function(response){
   // Your code here
 });
-
+```   
