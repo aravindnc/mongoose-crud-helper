@@ -37,15 +37,17 @@ Model.changeDocStatus(data).then(function(response){
 ```javascript
 const where = {"$in": {status: ['active','pending']}}; // Object
 const fieldsToDisplay = {postName: 1, description: 1, createdOn: 1 }; //Object
-const paging = {
+const options = {
+  select: fieldsToDisplay,
   page: 1, // Number
   limit: 10, // Number
+  lean: false, // Bool
   sortBy: 'createdOn', // String
   sortOrder: 'desc', // String
   populate: '' // String
 }; // Object
 
-Model.getAllDocs(where, fieldsToDisplay, paging).then(function(response){
+Model.getAllDocs(where, options).then(function(response){
   // Your code here
 });
 ```   
