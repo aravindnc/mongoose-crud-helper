@@ -9,6 +9,8 @@ A simple helper library for Mongoose projects.
 ## Configuration
 Sample usage scenarios are explained below. 
 
+More info on customLabels is available at https://www.npmjs.com/package/mongoose-custom-pagination
+
 #### Changes to Model.js
 You can directly code this to your model.
 ```javascript
