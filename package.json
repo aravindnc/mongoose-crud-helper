@@ -1,6 +1,6 @@
 {
   "name": "mongoose-crud-helper",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "A CRUD helper for Mongoose.",
   "main": "index.js",
   "directories": {
@@ -26,6 +26,6 @@
   "homepage": "https://github.com/aravindnc/mongoose-crud-helper#readme",
   "dependencies": {
     "directory": "^0.1.0",
-    "mongoose-custom-pagination": "^0.0.1"
+    "mongoose-custom-pagination": "^1.0.0"
   }
 }
