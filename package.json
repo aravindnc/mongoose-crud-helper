@@ -1,6 +1,6 @@
 {
   "name": "mongoose-crud-helper",
-  "version": "0.1.31",
+  "version": "0.1.32",
   "description": "A CRUD helper for Mongoose.",
   "main": "index.js",
   "directories": {
