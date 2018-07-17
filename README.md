@@ -9,8 +9,6 @@ A simple helper library for Mongoose projects.
 ## Configuration
 Sample usage scenarios are explained below. 
 
-More info on customLabels is available at https://github.com/aravindnc/mongoose-custom-pagination
-
 #### Changes to Model.js
 You can directly code this to your model.
 ```javascript
@@ -36,6 +34,10 @@ Model.changeDocStatus(data).then(function(response){
 });
 ```    
 ### 2.getAllDocs
+
+More info on customLabels referenced below is available at [mongoose-paginate-v2](https://www.npmjs.com/package/mongoose-paginate-v2)
+
+
 ```javascript
 const where = {"$in": {status: ['active','pending']}}; // Object
 const fieldsToDisplay = {postName: 1, description: 1, createdOn: 1 }; //Object
